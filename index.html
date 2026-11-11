@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="第1回 若手研究者・技術者勉強会。2027年1月24日、大阪府で開催。">
+  <meta name="description" content="第1回 若手研究者・技術者勉強会。2027年1月24日、大阪府心斎橋で開催。">
   <title>第1回 若手研究者・技術者勉強会</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -340,12 +340,36 @@
       font-size: 13px;
     }
 
-    /* FORM LINKS */
+    /* PAYMENT INFORMATION */
+
+    .payment-info {
+      margin-top: 24px;
+      padding: 22px;
+      background: #f2f7fd;
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+    }
+
+    .payment-info h4 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      color: #183f70;
+    }
+
+    .payment-info p {
+      margin: 0;
+      font-size: 13px;
+      color: #52657b;
+      line-height: 2;
+    }
+
+    /* LINKS */
 
     .form-link {
       color: #2677c7;
       text-decoration: none;
       font-weight: 800;
+      overflow-wrap: anywhere;
     }
 
     .form-link:hover {
@@ -401,6 +425,13 @@
       font-size: 15px;
     }
 
+    .deadline {
+      margin-top: 22px;
+      color: #a8d7ff;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
     /* FOOTER */
 
     footer {
@@ -454,6 +485,10 @@
         padding: 25px;
       }
 
+      .info-row {
+        gap: 12px;
+      }
+
       .apply-button {
         width: 100%;
         max-width: 360px;
@@ -490,8 +525,9 @@
       <div class="hero-meta">
         <span>2027年1月24日（日）</span>
         <span>14:00–18:00</span>
-        <span>大阪府</span>
-        <span>最大30名</span>
+        <span>大阪府心斎橋</span>
+        <span>最大15名</span>
+        <span>申込締切：2027年1月11日（月・祝）</span>
         <span>オンラインとのハイブリッド開催を検討中</span>
       </div>
 
@@ -675,9 +711,17 @@
         </div>
 
         <div class="schedule-row">
-          <div class="schedule-time">19:00–</div>
+          <div class="schedule-time">18:00–</div>
           <div class="schedule-event">
-            技術交流会（希望者のみ）
+            交流会（希望者のみ）<br>
+            <a
+              class="form-link"
+              href="https://www.panaf-expo2025.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PANAF' African Restaurant &amp; Club
+            </a>
           </div>
         </div>
 
@@ -727,7 +771,10 @@
 
           <div class="info-row">
             <strong>会場</strong>
-            <span>大阪府</span>
+            <span>
+              大阪府心斎橋<br>
+              詳細は後日ご案内
+            </span>
           </div>
 
           <div class="info-row">
@@ -748,7 +795,29 @@
 
           <div class="info-row">
             <strong>定員</strong>
-            <span>最大30名（会場参加）</span>
+            <span>最大15名（会場参加）</span>
+          </div>
+
+          <div class="info-row">
+            <strong>申込締切</strong>
+            <span>
+              2027年1月11日（月・祝）
+            </span>
+          </div>
+
+          <div class="info-row">
+            <strong>交流会</strong>
+            <span>
+              18:00〜（希望者のみ）<br>
+              <a
+                class="form-link"
+                href="https://www.panaf-expo2025.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PANAF' African Restaurant &amp; Club
+              </a>
+            </span>
           </div>
 
           <div class="info-row">
@@ -780,7 +849,7 @@
             </div>
             <div class="price">
               ¥6,000
-              <small>/ 研究会</small>
+              <small>/ 勉強会</small>
             </div>
           </div>
 
@@ -790,7 +859,7 @@
             </div>
             <div class="price">
               ¥4,000
-              <small>/ 研究会</small>
+              <small>/ 勉強会</small>
             </div>
           </div>
 
@@ -800,14 +869,15 @@
             </div>
             <div class="price">
               ¥2,000
-              <small>/ 研究会</small>
+              <small>/ 勉強会</small>
             </div>
           </div>
 
           <div class="info-row">
-            <strong>技術交流会</strong>
+            <strong>交流会費</strong>
             <span>
-              1,000円（20歳以上・希望者のみ）
+              1,000円<br>
+              （20歳以上・希望者のみ）
             </span>
           </div>
 
@@ -823,6 +893,20 @@
                 Googleフォームから申し込む
               </a>
             </span>
+          </div>
+
+          <!-- PAYMENT INFORMATION -->
+
+          <div class="payment-info">
+            <h4>お支払いについて</h4>
+            <p>
+              参加費および交流会費のお支払い方法については、
+              申込フォームへの回答後、
+              別途ご連絡いたします。
+              <br><br>
+              お支払い完了後、領収書を発行し、
+              お送りいたします。
+            </p>
           </div>
 
         </div>
@@ -856,6 +940,10 @@
         <br>
         第1回勉強会への参加をお待ちしています。
       </p>
+
+      <div class="deadline">
+        申込締切：2027年1月11日（月・祝）
+      </div>
 
       <a
         class="apply-button"
